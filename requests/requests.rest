@@ -1,0 +1,27 @@
+@vehicle_id = 640f1b45937b2902a555f6a9
+
+### Create a new vehicle
+POST http://localhost:5001/api/vehicles/
+Content-Type: application/json
+
+{
+    "type":"Van",
+    "make":"test",
+    "model":"Test"
+}
+### Get all vehicles
+GET http://localhost:5001/api/vehicles
+
+### Get single vehicle
+GET http://localhost:5001/api/vehicles/{{vehicle_id}}
+
+### Update vehicle
+
+PUT http://localhost:5001/api/vehicles/{{vehicle_id}}
+Content-Type: application/json
+
+{
+    "type":"EV",
+    "make":"Tesla",
+    "model":"3"
+}

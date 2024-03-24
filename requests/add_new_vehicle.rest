@@ -1,0 +1,8 @@
+POST http://localhost:5002/api/vehicles/
+Content-Type: application/json
+
+{
+    "type":"Van",
+    "make":"test",
+    "model":"Test"
+}
